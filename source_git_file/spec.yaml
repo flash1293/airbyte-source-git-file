@@ -1,0 +1,20 @@
+documentationUrl: https://docsurl.com
+supportsIncremental: true
+connectionSpecification:
+  $schema: http://json-schema.org/draft-07/schema#
+  title: Git File Spec
+  type: object
+  required:
+    - repoUrl
+    - branch
+    - depth
+  properties:
+    repoUrl:
+      type: string
+      description: The URL of the repo to extract
+    branch:
+      type: string
+      description: The branch to extract
+    depth:
+      type: string
+      description: Maximum number of commits to fetch
